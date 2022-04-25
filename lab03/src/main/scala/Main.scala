@@ -72,5 +72,5 @@ def lab3zad4(): Unit = {
   println(shuffle(List(2, 4, 3, 5), List(1, 2, 2, 3, 1, 5)))
 }
 
-
+//git test
 
