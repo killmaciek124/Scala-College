@@ -1,4 +1,4 @@
-// import scala.annotation.tailrec
+import scala.annotation.tailrec
 // def reverse(str: String): String = {
 //     @tailrec
 //     def reverseHelper(str: String, akum: String = ""): String = {
@@ -44,22 +44,34 @@
 //   println(isPrime(7))
 // }
 
-def fib(n: Int): Int = { // TUTAJ ZACZNIJ WWE WTOOREK <==============!
-  0
-}
-@main
-def lab3zad3(): Unit = {
-  // println(fib(5))
-}
-
-// def shuffle(l1: List[Int], l2: List[Int]): List[Int] = {
-  
+// def fib(n: Int): Int = { 
+//   @tailrec
+//   def fibHelper(first: Int, second: Int, range: Int, licznik: Int = 1): Int = {
+//     if (range == 1) {
+//       1
+//     } else if (range == 0) {
+//       2
+//     }else if (range == licznik) {
+//       second
+//     } else {
+//       val newFirst = second
+//       val newSecond = first + second
+//       fibHelper(newFirst, newSecond, range, licznik+1)
+//     }
+//   }
+//   fibHelper(2,1,n)
 // }
-
 // @main
-// def lab3zad4(): Unit = {
-//   // println(shuffle(List(2, 4, 3, 5), List(1, 2, 2, 3, 1, 5)))
+// def lab3zad3(): Unit = {
+//   println(fib(2))
 // }
 
-// //git test
+def shuffle(l1: List[Int], l2: List[Int]): List[Int] = {
+  
+}
+
+@main
+def lab3zad4(): Unit = {
+  // println(shuffle(List(2, 4, 3, 5), List(1, 2, 2, 3, 1, 5)))
+}
 
