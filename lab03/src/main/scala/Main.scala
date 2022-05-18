@@ -67,7 +67,8 @@ import scala.annotation.tailrec
 // }
 
 def shuffle(l1: List[Int], l2: List[Int]): List[Int] = {
-  
+  @tailrec
+  def shuffleHelper(l1: List[Int], l2: List[Int], )
 }
 
 @main
