@@ -102,8 +102,14 @@
 // }
 
 
-def freqMax[A](list: List[A]): (Set[A],Int) = {
-    Nil
+def freqMax[A](list: List[A]): (Set[A],Int) = { //  TO DO !!!! 
+    val newlist = list
+    val max1 = newlist.max 
+    val max1Amount = list.count(_ == max1)
+    val listNoMax = list.filter(_ != max1)
+    val max2 = listNoMax.max
+    val max2Amount = listNoMax.count(_ == max2)
+    (Set(list.head,list.head),3)
 }
 
 @main
