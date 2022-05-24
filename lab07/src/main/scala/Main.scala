@@ -21,36 +21,47 @@
 //   assert( sumOpts(List(None, None)) == None)  // ==> OK
 // }
 
-def position[T](l: List[T], el: T): Option[Int] = {
-  val filtered = l.filter(_ != None)  // filtrowanie Noneów! 
+// def position[T](l: List[T], el: T): Option[Int] = {
+//   val filtered = l.filter(_ != None)  // filtrowanie Noneów! 
 
-  if (filtered.length == 0) {
-    return None
-  }
+//   if (filtered.length == 0) {
+//     return None
+//   }
 
-  val result = l.indexOf(el,3) // DRUGI PARAMETR TO INDEX OD KTÓREGO ZACZYNAMY SZUKANIE WŁĄCZNIE
-  if (result == -1) { // JEŚLI INDEX OF NIE ZNAJDZIE ELEMENTU TO ZWRÓCI -1 !!!!
-    return None
-  }
-  Some(result)
+//   val result = l.indexOf(el,3) // DRUGI PARAMETR TO INDEX OD KTÓREGO ZACZYNAMY SZUKANIE WŁĄCZNIE
+//   if (result == -1) { // JEŚLI INDEX OF NIE ZNAJDZIE ELEMENTU TO ZWRÓCI -1 !!!!
+//     return None
+//   }
+//   Some(result)
+// }
+
+// @main
+// def main2(): Unit = {
+//   val lista = List(2, 1,5, 1, 1,5)
+//   println(position(lista, 1)) // ==> Some(1)
+//   println(position(lista, 3.5)) // ==> None
+
+// }
+
+// def indices[A](l: List[A], el: A): Set[Int] = { // DONE ! 
+//   val res = l.zipWithIndex.filter(_(0) == el).map(n => n(1))
+//   res.toSet
+// }
+
+// @main
+// def zadanie_26(): Unit = {
+//   val lista = List(1, 2, 1, 1, 5)
+//   println(indices(lista, 1)) // ==> Set(0, 2, 3).
+//   println(indices(lista, 7)) // ==> Set()
+
+// }
+
+def swap[A](l: List[A]): List[A] = {
+    Nil
 }
 
 @main
-def main2(): Unit = {
-  val lista = List(2, 1,5, 1, 1,5)
-  println(position(lista, 1)) // ==> Some(1)
-  println(position(lista, 3.5)) // ==> None
-
-}
-
-def indices[A](l: List[A], el: A): Set[Int] = {
-    Set()
-}
-
-@main3
-def zadanie_26(): Unit = {
-  val lista = List(1, 2, 1, 1, 5)
-  indices(lista, 1) // ==> Set(0, 2, 3).
-  indices(lista, 7) // ==> Set()
-
+def zadanie_27(): Unit = {
+  val lista = List(1, 2, 3, 4, 5)
+  println(swap(lista)) // ==> List(2, 1, 4, 3, 5)
 }
