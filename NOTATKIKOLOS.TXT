@@ -5,7 +5,7 @@ lista.toSeq.groupBy(identity).mapValues(_.size).toList
 
 dodawanie do siebie list albo setow
 l1 ++ l2
-usuwanie z l1 el. l2
+usuwanie z l1 elementow l2
 l1 -- l2
 
 set.intersect(anotherset) - czesc wspolna
@@ -19,6 +19,7 @@ val dane = Source.fromFile("ogniem_i_mieczem.txt").toList
 
 distinct - unique elements - dziala na stringi i listy
 
+  val osoby = io.Source.fromFile("nazwiska.txt").getLines.toList // CZYTANIE Z PLIKU!!! <====
 
 
 CASE'S:
@@ -27,7 +28,7 @@ case head :: (mid:+last)
 
 
 
-.flatten
+.flatten == DZIALA TYLKO NA LISTY LIST !!!!!!!
 
 
 def isPrime(i :Int) : Boolean = {
@@ -38,3 +39,8 @@ def isPrime(i :Int) : Boolean = {
     else
       !(2 to (i-1)).exists(x => i % x == 0)
 }
+ INIT ZWRACA CAŁĄ LISTE BEZ OSTATNIEGO ELEMENTU ! 
+scala> List(4,5,6).init
+res61: List[Int] = List(4, 5)
+
+APPE

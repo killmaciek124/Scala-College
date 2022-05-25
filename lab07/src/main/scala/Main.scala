@@ -55,24 +55,22 @@
 //   println(indices(lista, 7)) // ==> Set()
 
 // }
-
-// def swap[A](l: List[A]): List[A] = { //  TO DO ! 
+// def swap[A](l: List[A]): List[A]  = { //  TO DO ! 
 //     val res = l.groupBy(l.indexOf(_) % 2) // groupBy grupuje nam na Hashmape elementy wzgledem wyniku warunku jakby 
-//     val evens = res(0).map(List(_)) // parzysta zawsze dluzsza
-//     val odds = res(1).map(List(_))
-//     println(odds)
-//     println(evens)
-
-//     // TEORIA : 
-// //       scala> Seq(1,2,3,4,5).zipAll(Seq('a','b','c','d'),9,'z') // ZIP ALL TWORZY DWU ELEMENTOWE KROTKI Z DWOCH LIST ! 
-// // res113: Seq[(Int, Char)] = List((1,a), (2,b), (3,c), (4,d), (5,z)) (ostatnie dwie wartosci to jakby listy byly roznej dlugosci co dodamy)
-//     val ress = evens.zipAll(odds,Nil,Nil).flatMap(Function.tupled(_ ::: _))
-//     println(ress)
-//     l
-    
-    
-    
+//     val evens = res(0) // parzysta zawsze dluzsza
+//     val odds = res(1)
+//     odds.zip(evens).map(x => x.toList).flatten :+ l.last // FLATTEN DZIALA TYLKO NA LISTE W LISTACH 
 // }
+// //     // TEORIA : 
+// // //       scala> Seq(1,2,3,4,5).zipAll(Seq('a','b','c','d'),9,'z') // ZIP ALL TWORZY DWU ELEMENTOWE KROTKI Z DWOCH LIST ! 
+// // // res113: Seq[(Int, Char)] = List((1,a), (2,b), (3,c), (4,d), (5,z)) (ostatnie dwie wartosci to jakby listy byly roznej dlugosci co dodamy)
+// //     val ress = evens.zipAll(odds,Nil,Nil).flatMap(Function.tupled(_ ::: _))
+// //     println(ress)
+// //     l
+    
+    
+    
+// // }
 
 // @main
 // def zadanie_27(): Unit = {

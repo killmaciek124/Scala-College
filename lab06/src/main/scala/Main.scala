@@ -101,19 +101,15 @@
 //     println( remElems(l, 15) == l ) // ==> true
 // }
 
-
-def freqMax[A](list: List[A]): (Set[A],Int) = { //  TO DO !!!! 
-    val newlist = list
-    val max1 = newlist.max 
-    val max1Amount = list.count(_ == max1)
-    val listNoMax = list.filter(_ != max1)
-    val max2 = listNoMax.max
-    val max2Amount = listNoMax.count(_ == max2)
-    (Set(list.head,list.head),3)
+def freqMax[A](list: List[A]): (Set[A],Int)  = { //  DONE ! 
+    val res = list.toSeq.groupBy(x=>x).mapValues(_.size).toList//.groupBy(x=> x(1)) // MAPVALUES wykonuje operacje na wartosciach mapy
+    val maxValue = res.map(x=> x(1)).max
+    val foo = res.filter(x=> x(1) == maxValue).map(x=> x(0)).toSet
+    (foo,maxValue)
 }
-
 @main
 def zadanie_23: Unit = {
     val l = List(1, 1, 2, 4, 4, 3, 4, 1, 3)
+    println(freqMax(l))
     assert( freqMax(l) == (Set(1,4), 3) ) // ==> OK
 }

@@ -35,35 +35,24 @@ import javax.swing.text.StyledEditorKit.BoldAction
 // println(res)
 // ========
 
-// def skompresuj[A](l: List[A]): List[(A, Int)] = { // TO DO !!!! 
-//     @tailrec
-//     def helper[A](l: List[A], akum: List[(A, Int)], elemCounter: Int, listCounter: Int, helper: Boolean): List[(A, Int)] = (l,helper) match { // helper= kiedy robimy nową tuple
-//       case (Nil,false) => akum // listCounter = określa indexy podwojnych tupli ; elemCounter = drugi element tej tupli 
-//       case (head::tail,true) => { // true == robimy nową tuple 
-//         if (head != tail(0)) {
-//           helper[A](tail, akum.appended((head, elemCounter + 1 )), 0,listCounter + 1,true)
-//         } else {
-//           helper(tail, akum.appended((head, elemCounter+1)), elemCounter+1,listCounter,false)
-//         }
-//       }
-//       case (head::tail,false) => { // false == nie robimy nowej tupli
-//         if (head != tail(0)) {
-//           helper(tail, akum.updated(listCounter,(head, elemCounter+1)), 0,listCounter+1,true)
-//         } else {
-//           helper(tail,akum.updated(listCounter,(head, elemCounter+1)), elemCounter+1,listCounter,false)
-//         }
+def skompresuj(l: List[Char]): List[(Char, Int)] = {  
+    @tailrec
+    def helper(l: List[Char], akum: List[(Char, Int)] = List(), innerAkum: (Char,Int)= (' ', 0)  ): List[(Char, Int)] = (l) match { // helper= kiedy robimy nową tuple
+      case Nil => akum:+innerAkum // listCounter = określa indexy podwojnych tupli ; elemCounter = drugi element tej tupli 
+      case head::tail => innerAkum match {
+        case (' ',0) => helper(tail,akum,(head,1))
+        case (char, counter) => if (char == head) helper(tail, akum, (char,counter+1)) else helper(tail, akum:+innerAkum, (head,1))
+      }
+    }
+    helper(l)
+}
 
-//       }
-//     }
-//     helper[A](l,Nil, 0,0,true)
-// }
-
-// @main
-// def zadanie_16: Unit = {
-//     val lista = List('a', 'a', 'b', 'c', 'c', 'c', 'a', 'a', 'b', 'd')
-//     val res = skompresuj(lista) // ==> List(('a', 2), ('b', 1), ('c', 3), ('a', 2), ('b', 1), ('d', 1)) // ZIP WITH INDEX 
-//     println(res)
-// }
+@main
+def zadanie_16: Unit = {
+    val lista = List('a', 'a', 'b', 'c', 'c', 'c', 'a', 'a', 'b', 'd')
+    val res = skompresuj(lista) // ==> List(('a', 2), ('b', 1), ('c', 3), ('a', 2), ('b', 1), ('d', 1)) // ZIP WITH INDEX 
+    println(res)
+}
 
 // def isOrdered[T](leq: (T, T) => Boolean)(arr: List[T]): Boolean = { // DONE ! 
 //   @tailrec
