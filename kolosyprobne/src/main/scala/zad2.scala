@@ -1,3 +1,5 @@
+import scala.annotation.tailrec
+
 /*
   Używając rekurencji ogonowej zdefiniuj funkcję:
 
@@ -27,13 +29,22 @@
   Uwaga: w rozwiązaniu nie używaj zmiennych, ani mechanizmów imperatywnych jak pętle.
   Nie używaj też kolekcji języka Scala.
 */
+// type Pred[A] = A => Boolean
 
-object zad2 {
-    def pairwiseTest[A](l: List[A])(pred: (A, A) => Boolean):Boolean = {
-        ???
+    def pairwiseTest[A](l: List[A])(pred: (A, A) => Boolean):Boolean = { // DONE ! 
+        @tailrec
+        def helper[A](l: List[A])(pred: (A,A) => Boolean) : Boolean = l match {
+          case Nil => true
+          case head::(mid:+last) => { // rozlozenie na pierwszy, srodek i ostatni
+            if (pred(head, last) == true) helper(mid)(pred) else false
+          }
+          case head => true // jesli zostanie ostatni element w środku JEDEN 
+        }
+        helper(l)(pred)
     }
-
-    def main(args: Array[String]): Unit = {
-      //...
+    @main
+    def main2(): Unit = {
+  
+      val res = pairwiseTest(List("fajkel","majkel","majkel","fajkel"))(_ == _)
+      println(res)
     }
-}

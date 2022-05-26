@@ -1,3 +1,5 @@
+import scala.io.Source
+
 /*
     Korzystając wyłącznie z operacji na kolekcjach (w szczególności nie możesz uzyć rekurencji
     ani mechanizmów imperatywnych, takich jak zmienne i pętle) zdefiniuj funkcję:

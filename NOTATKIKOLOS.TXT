@@ -1,8 +1,9 @@
-mamy liste i chcemy policzyc ile jest w niej elementow
+///////////////////////////////////////////
+mamy liste i chcemy liczbe kazdego z elementow
 
 lista.toSeq.groupBy(identity).mapValues(_.size).toList
 
-
+///////////////////////////////////////////////////////////////
 dodawanie do siebie list albo setow
 l1 ++ l2
 usuwanie z l1 elementow l2
@@ -12,7 +13,7 @@ set.intersect(anotherset) - czesc wspolna
 
 
 import scala.io.Source
-val dane = Source.fromFile("ogniem_i_mieczem.txt").toList
+val dane = Source.fromFile("ogniem_i_mieczem.txt").getLines.toList
 .getLines - cale linie
 
 

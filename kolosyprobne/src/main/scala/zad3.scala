@@ -1,3 +1,5 @@
+import scala.io.Source
+
 /*
 Plik temepratury.txt zawiera w pierwszej kolumnie rok oraz w kolejnych dwunastu kolumnach
 średnią temperaturę za każdy miesiąc w danym roku (kolejno: styczeń, luty, marzec itd.).
@@ -21,19 +23,27 @@ Rozwiąż to zadanie używając metod oferowanych przez kolekcje. Nie używaj zm
 mutowalnych, "pętli" (while, for bez yield, foreach) oraz nie definiuj żadnej funkcji rekurencyjnej.
 
 */
+// 
 
-object zad3 {
+    def maxAvgTemps(data: List[String]): Set[(Int, Double)]  = { // DONE ! 
+        val res = data   // ten map ze SPLITEM zamienia listę stringów ...
+        .map(x=> x.split(" ").toList)       // na listę list a wszystkie podstringi są rozdzielone na elementy (spacją ! )
+        .map(x=> x.tail)
+        .map(x=> x.zipWithIndex)
+        .flatten
+        .groupBy(x=> x(1))
+        .toList
+        .map(x=> x(1))
+        .map(x=> x.map(x=> x(0)))
+        .map(x=> x.max)
+        .zipWithIndex
+        .map(x => (x(1)+1,x(0).toDouble))
+        res.toSet
 
-    def maxAvgTemps(data: List[String]): Set[(Int, Double)] = {
-        ???
     }
-
-    def main(args: Array[String]): Unit = {
-        val data = io.Source
-            .fromResource("temperatury.txt")
-            .getLines()
-            .toList
-        //...
+    @main
+    def main3(): Unit = {
+        val dane = Source.fromFile("temperatury.txt").getLines.toList
+        println(maxAvgTemps(dane))
         
     }
-}
