@@ -1,21 +1,15 @@
-[0m[[0m[0mdebug[0m] [0m[0mPackaging /home/LABPK/mmaziuk/Pulpit/properscalarepo/REALKOLOS/kolokwium_1/target/scala-3.1.2/kolokwium_1_3-1.0.0.jar ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mPackaging /mnt/c/Users/macie/Desktop/scalarepo/maziuk-maciej/REALKOLOS/kolokwium_1/target/scala-3.1.2/kolokwium_1_3-1.0.0.jar ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	test.txt[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/LABPK/mmaziuk/Pulpit/properscalarepo/REALKOLOS/kolokwium_1/target/scala-3.1.2/classes/test.txt[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Zad01$package.tasty[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/LABPK/mmaziuk/Pulpit/properscalarepo/REALKOLOS/kolokwium_1/target/scala-3.1.2/classes/Zad01$package.tasty[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Zad01$package.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/LABPK/mmaziuk/Pulpit/properscalarepo/REALKOLOS/kolokwium_1/target/scala-3.1.2/classes/Zad01$package.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /mnt/c/Users/macie/Desktop/scalarepo/maziuk-maciej/REALKOLOS/kolokwium_1/target/scala-3.1.2/classes/test.txt[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Zad01$package$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/LABPK/mmaziuk/Pulpit/properscalarepo/REALKOLOS/kolokwium_1/target/scala-3.1.2/classes/Zad01$package$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	zadanie_1.tasty[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/LABPK/mmaziuk/Pulpit/properscalarepo/REALKOLOS/kolokwium_1/target/scala-3.1.2/classes/zadanie_1.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /mnt/c/Users/macie/Desktop/scalarepo/maziuk-maciej/REALKOLOS/kolokwium_1/target/scala-3.1.2/classes/Zad01$package$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Zad01$package.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /mnt/c/Users/macie/Desktop/scalarepo/maziuk-maciej/REALKOLOS/kolokwium_1/target/scala-3.1.2/classes/Zad01$package.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Zad01$package.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /mnt/c/Users/macie/Desktop/scalarepo/maziuk-maciej/REALKOLOS/kolokwium_1/target/scala-3.1.2/classes/Zad01$package.tasty[0m
 [0m[[0m[0mdebug[0m] [0m[0m	zadanie_1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/LABPK/mmaziuk/Pulpit/properscalarepo/REALKOLOS/kolokwium_1/target/scala-3.1.2/classes/zadanie_1.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Zad02$package.tasty[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/LABPK/mmaziuk/Pulpit/properscalarepo/REALKOLOS/kolokwium_1/target/scala-3.1.2/classes/Zad02$package.tasty[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Zad02$package.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/LABPK/mmaziuk/Pulpit/properscalarepo/REALKOLOS/kolokwium_1/target/scala-3.1.2/classes/Zad02$package.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	Zad02$package$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	  /home/LABPK/mmaziuk/Pulpit/properscalarepo/REALKOLOS/kolokwium_1/target/scala-3.1.2/classes/Zad02$package$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /mnt/c/Users/macie/Desktop/scalarepo/maziuk-maciej/REALKOLOS/kolokwium_1/target/scala-3.1.2/classes/zadanie_1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	zadanie_1.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /mnt/c/Users/macie/Desktop/scalarepo/maziuk-maciej/REALKOLOS/kolokwium_1/target/scala-3.1.2/classes/zadanie_1.tasty[0m
 [0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m

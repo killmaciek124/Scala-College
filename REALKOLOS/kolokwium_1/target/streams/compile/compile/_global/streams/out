@@ -1,10 +1,5 @@
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /home/LABPK/mmaziuk/Pulpit/properscalarepo/REALKOLOS/kolokwium_1/src/main/scala/Zad02.scala:14:30 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m14 |[0m        [33mcase[0m _ => [33mval[0m x = head+licznik  helper(tail, akum, smallList.appended(x), licznik )(len,shift)[0m
-[0m[[0m[31merror[0m] [0m[0m   |                          [31m^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |                          value + is not a member of A[0m
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E007] Type Mismatch Error: /home/LABPK/mmaziuk/Pulpit/properscalarepo/REALKOLOS/kolokwium_1/src/main/scala/Zad02.scala:14:102 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m14 |[0m        [33mcase[0m _ => [33mval[0m x = head+licznik  helper(tail, akum, smallList.appended(x), licznik )(len,shift)[0m
-[0m[[0m[31merror[0m] [0m[0m   |                                                                                                      [31m^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |                                                 Found:    Unit[0m
-[0m[[0m[31merror[0m] [0m[0m   |                                                 Required: List[List[A]][0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /mnt/c/Users/macie/Desktop/scalarepo/maziuk-maciej/REALKOLOS/kolokwium_1/src/main/scala/Zad02.scala:14:61 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m14 |[0m        [33mcase[0m _ =>  helper(tail, akum, smallList.appended(head+licznik), licznik )(len,shift)[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                                         [31m^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |                                            value + is not a member of A[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
