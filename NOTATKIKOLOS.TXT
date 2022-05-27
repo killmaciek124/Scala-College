@@ -30,9 +30,11 @@ case head :: (mid:+last)
 
 
 .flatten == DZIALA TYLKO NA LISTY LIST !!!!!!!
+IS PRIME : 
 
+if (Range(2, p2-1).filter(p2 % _ == 0).length == 0) //// ZWRACA Boolean
 
-def isPrime(i :Int) : Boolean = {
+def isPrime(i :Int) : Boolean = { // SPRAWDZA CZY LICZBA JEST PIERWSZA
     if (i <= 1)
       false
     else if (i == 2)

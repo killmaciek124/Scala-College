@@ -1,0 +1,60 @@
+drop usuwa pierwsze X elemntow z listy 
+
+take bierze pierwsze X elementow z listy
+
+val (result1, result2) = list.partition(x=>{x < 0}) // partition zwraca 2 listy, jedna ktora spelnia warunek i druga ktora nie ! 
+
+// TEORIA : 
+// METODA .distinct == dziala na stringa albo liste, zwraca listę BEZ POWTORZEN 
+// mamy liste i chcemy policzyc ile jest w niej elementow
+
+// dodawanie do siebie list albo setow
+// l1 ++ l2
+// usuwanie z l1 elementow l2
+// l1 -- l2
+
+// set.intersect(anotherset) - czesc wspolna
+
+MAPVALUES wykonuje operacje na wartosciach mapy
+
+// elem.get == ZWRACA ELEM JEŚLI ELEM ISTNIEJE == FUNKCJA DLA OPTIONS // getOrElse(x) jeśli nie znajdie elementu to zwroci X 
+
+val result = l.indexOf(el,3) // DRUGI PARAMETR TO INDEX OD KTÓREGO ZACZYNAMY SZUKANIE WŁĄCZNIE
+//   if (result == -1) { // JEŚLI INDEX OF NIE ZNAJDZIE ELEMENTU TO ZWRÓCI -1 !!!!
+//     return None
+//   }
+
+FLATTEN DZIALA TYLKO NA LISTE W LISTACH 
+
+scala> Seq(1,2,3,4,5).zipAll(Seq('a','b','c','d'),9,'z') // ZIP ALL TWORZY DWU ELEMENTOWE KROTKI Z DWOCH LIST ! 
+// // // res113: Seq[(Int, Char)] = List((1,a), (2,b), (3,c), (4,d), (5,z)) (ostatnie dwie wartosci to jakby listy byly roznej dlugosci co dodamy)
+
+
+val res = l.filter(_.slice(0,6) == "Europe").map(x => x.stripPrefix("Europe/")).sorted // SLICE WYLAPUJE ZE STRINGA LUB LISTY WARTOSCI OD INT DO INT
+//   res // .SORTED == SORTUJE 
+
+
+println("ala ma kota".stripPrefix("ala ")) // ==> "ma kota"
+
+ZIP = tworzy krotki 2 elementowe z 2 list, wynik jest dlugoscia krotszej krotki
+
+
+  val result = guess.intersect(secret) // INTERSECT ZWRACA CZĘŚĆ WSPÓLNĄ OBU ZBIORÓW!!!
+
+  //   val res =  for {
+//     b <- 1 to n
+//     a <- 1 to n
+//     c <- 1 to n
+//     if (a<b && a*a + b*b == c*c)
+
+// } yield  (a,b,c) // yeld defaultowo tworzy kolekcje/liste  do ktorej tutaj dodajemy liste 
+
+
+// DISTINCT USUWA POWTORZENIA \
+
+
+val res = data   // ten map ze SPLITEM zamienia listę stringów ...
+        .map(x=> x.split(" ").toList)       // na listę list a wszystkie podstringi są rozdzielone na elementy (spacją ! )
+
+
+if (Range(2, p1-1).filter(p1 % _ == 0).length == 0) // CHECK IF THE NUMBER IS PRIME !!!!!

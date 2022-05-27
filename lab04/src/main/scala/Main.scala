@@ -137,24 +137,25 @@ def and[A](p: Pred[A], q: Pred[A]): Pred[A] = {
     (x: A) => p(x) && q(x)
 }
 
-// def or[A](p: Pred[A], q: Pred[A]): Pred[A] = {
-//     a => true
-// }
+def and[A](p: Pred[A], q: Pred[A]): Pred[A] = {
+  (x: A) => p(x) && q(x)
+}
 
-// def not[A](p: Pred[A]): Pred[A] = {
-//     a => true
-// }
+def or[A](p: Pred[A], q: Pred[A]): Pred[A] = {
+  (x: A) => p(x) || q(x)
+}
 
-// def imp[A](p: Pred[A], q: Pred[A]): Pred[A] = {
-//     a => true
-// }
+def not[A](p: Pred[A]): Pred[A] = {
+  (x: A) => !p(x)
+}
+
+def imp[A](p: Pred[A], q: Pred[A]): Pred[A] = {
+  (x: A) => !p(x) || q(x)
+}
 
 @main
 def zadanie_14: Unit = {   // TO DO AND TO REPEAT!!!!
-    val res = and[Boolean](,false)
 }
-
-
 
 
 
