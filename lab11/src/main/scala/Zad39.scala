@@ -34,3 +34,5 @@ def zadanie_39: Unit = {
 }
 // bushingi https://www.amazon.co.uk/Independent-Trucks-Rebuild-Kit-Black/dp/B074BDJZL1
 /// scala course https://www.udemy.com/course/akka-essentials/
+
+// https://github.com/hubcio2115/aisd-zadania

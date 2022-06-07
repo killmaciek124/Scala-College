@@ -52,7 +52,7 @@
 
 // dodawanie do siebie list albo setow
 // l1 ++ l2
-// usuwanie z l1 el. l2
+// usuwanie z l1 elementow l2
 // l1 -- l2
 
 // set.intersect(anotherset) - czesc wspolna

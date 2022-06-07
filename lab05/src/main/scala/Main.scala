@@ -35,7 +35,7 @@ import javax.swing.text.StyledEditorKit.BoldAction
 // println(res)
 // ========
 
-def skompresuj(l: List[Char]): List[(Char, Int)] = {  
+def skompresuj(l: List[Char]): List[(Char, Int)] = { // DONE !  
     @tailrec
     def helper(l: List[Char], akum: List[(Char, Int)] = List(), innerAkum: (Char,Int)= (' ', 0)  ): List[(Char, Int)] = (l) match { // helper= kiedy robimy nową tuple
       case Nil => akum:+innerAkum // listCounter = określa indexy podwojnych tupli ; elemCounter = drugi element tej tupli 
