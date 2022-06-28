@@ -3,7 +3,11 @@ package jp1.akka.lab13.model
 import akka.actor.{Actor, ActorRef}
 
 object Grupa {
+<<<<<<< HEAD
   case class  Rundak(aktors: List[ActorRef])
+=======
+  case object Runda
+>>>>>>> 6f8c0215d4d58ff25bf97ac0550d3011e2f1b70e
   // Zawodnicy mają wykonać swoje próby – Grupa
   // kolejno (sekwencyjnie) informuje zawodników
   // o konieczności wykonania próby i „oczekuje”
@@ -20,8 +24,13 @@ object Grupa {
   // Grupa kończy rywalizację
 }
 class Grupa(zawodnicy: List[ActorRef]) extends Actor {
+<<<<<<< HEAD
   import Grupa._
   def receive: Receive = {
     case Rundak(zawodnicy: List[ActorRef]) => println("DZIALA COS ") 
+=======
+  def receive: Receive = {
+    case msg => println(msg)
+>>>>>>> 6f8c0215d4d58ff25bf97ac0550d3011e2f1b70e
   }
 }

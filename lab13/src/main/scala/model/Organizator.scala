@@ -1,7 +1,10 @@
 package jp1.akka.lab13.model
+<<<<<<< HEAD
 import math.Fractional.Implicits.infixFractionalOps
 import math.Integral.Implicits.infixIntegralOps
 import math.Numeric.Implicits.infixNumericOps
+=======
+>>>>>>> 6f8c0215d4d58ff25bf97ac0550d3011e2f1b70e
 
 import akka.actor.{Actor, ActorRef, Props}
 
@@ -27,7 +30,10 @@ object Organizator {
 class Organizator extends Actor {
   // importujemy komunikaty na które ma reagować Organizator
   import Organizator._
+<<<<<<< HEAD
   import Grupa._
+=======
+>>>>>>> 6f8c0215d4d58ff25bf97ac0550d3011e2f1b70e
 
   def receive: Receive = {
     case Start =>
@@ -37,6 +43,7 @@ class Organizator extends Actor {
         val o = Utl.osoba()
         context.actorOf(Props(Zawodnik(o)), s"${o.imie}-${o.nazwisko}" filter akkaPathAllowedChars)
       }
+<<<<<<< HEAD
 
       val grupa = context.actorOf(Props[Grupa](),"grupa")
       // grupa ! Rundak(zawodnicy)
@@ -53,10 +60,19 @@ class Organizator extends Actor {
       // println(res)
       // context.become(eliminacje(res))
     // Obsługa pozostałych komunikatów
+=======
+      // ...
+
+    // Obsługa pozostałych komunikatów
+
+>>>>>>> 6f8c0215d4d58ff25bf97ac0550d3011e2f1b70e
     case Stop =>
       println("kończymy zawody...")
       context.system.terminate()
   }
+<<<<<<< HEAD
 
   // def eliminacje()
+=======
+>>>>>>> 6f8c0215d4d58ff25bf97ac0550d3011e2f1b70e
 }

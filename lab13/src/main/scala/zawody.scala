@@ -1,6 +1,4 @@
 package jp1.akka.lab13
-/// NOTES : 
-  /// 1. Organizator -  wylosowuje zawodników, inicjuje rozgrywanie obu rund, agreguje ich wyniki oraz oblicza i prezentuje klasyfikację
 // „Interfejs użytkownika” wymaga pewnych dodatkowych elementów:
 import scala.concurrent.ExecutionContext
 import scala.util.control.Breaks._
@@ -26,7 +24,10 @@ def zawody: Unit = {
           // początek zawodów
           organizator ! Organizator.Start
         case "eliminacje" =>
+<<<<<<< HEAD
           // organizator ! Organizator.Wyniki
+=======
+>>>>>>> 6f8c0215d4d58ff25bf97ac0550d3011e2f1b70e
           // polecenie rozegrania rundy eliminacyjnej
         case "finał" =>
           // polecenie rozegrania rundy finałowej
