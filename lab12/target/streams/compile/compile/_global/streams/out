@@ -1,10 +1,5 @@
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E007] Type Mismatch Error: /home/LABPK/mmaziuk/Pulpit/properscalarepo/maziuk-maciej/lab12/src/main/scala/Jabberwocky.scala:49:25 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m49 |[0m  [33mdef[0m [36mreceive[0m: [35mReceive[0m = {[0m
-[0m[[0m[31merror[0m] [0m[0m   |                         [31m^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |                         Found:    Unit[0m
-[0m[[0m[31merror[0m] [0m[0m   |                         Required: Obrońca.this.Receive[0m
-[0m[[0m[31merror[0m] [0m[0m[31m50 |[0m    [34m// case Hit => println("Dead")[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m51 |[0m    [34m// case Miss => println("Zyje")[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m52 |[0m    [34m// case  => println("dd")[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m53 |[0m  }[0m
+[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /mnt/c/Users/macie/Desktop/scalarepo/maziuk-maciej/lab12/src/main/scala/Jabberwocky.scala:132:21 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m132 |[0m      [33mif[0m (szansaNaHit*[31m100[0m > randomNum) {[0m
+[0m[[0m[31merror[0m] [0m[0m    |          [31m^^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m    |          value * is not a member of AnyVal[0m
 [0m[[0m[31merror[0m] [0m[0mone error found[0m

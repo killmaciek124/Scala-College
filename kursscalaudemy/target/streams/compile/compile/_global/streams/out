@@ -1,0 +1,5 @@
+[0m[[0m[31merror[0m] [0m[0m[31m-- Error: /mnt/c/Users/macie/Desktop/scalarepo/maziuk-maciej/kursscalaudemy/src/main/scala/foo2.scala:89:11 [0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m89 |[0m    [33mimport[0m BankAccount._[0m
+[0m[[0m[31merror[0m] [0m[0m   |           [31m^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m   |          constructor proxy [33mobject[0m [35mBankAccount[0m cannot be used as a value[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
