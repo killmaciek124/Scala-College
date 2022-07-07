@@ -28,3 +28,4 @@ class Grupa(zawodnicy: List[ActorRef]) extends Actor {
     case msg => println(msg)
   }
 }
+}

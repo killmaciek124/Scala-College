@@ -50,5 +50,3 @@ bin/
 
 #general
 *.class
-
-*/build.sbt

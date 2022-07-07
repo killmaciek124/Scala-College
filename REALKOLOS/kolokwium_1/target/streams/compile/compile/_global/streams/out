@@ -1,5 +1,5 @@
-[0m[[0m[31merror[0m] [0m[0m[31m-- [E008] Not Found Error: /mnt/c/Users/macie/Desktop/scalarepo/maziuk-maciej/REALKOLOS/kolokwium_1/src/main/scala/Zad02.scala:14:61 [0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m14 |[0m        [33mcase[0m _ =>  helper(tail, akum, smallList.appended(head+licznik), licznik )(len,shift)[0m
-[0m[[0m[31merror[0m] [0m[0m   |                                                         [31m^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m   |                                            value + is not a member of A[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m-- [E129] Potential Issue Warning: /mnt/c/Users/macie/Desktop/scalarepo/maziuk-maciej/REALKOLOS/kolokwium_1/src/main/scala/Zad01.scala:39:8 [0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m39 |[0m        akum[0m
+[0m[[0m[33mwarn[0m] [0m[0m   |        [33m^^^^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m   |A pure expression does nothing in statement position; you may be omitting necessary parentheses[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m

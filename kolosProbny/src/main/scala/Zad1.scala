@@ -1,6 +1,5 @@
 import akka.actor._
 
-object Zad1 {
 
   case class Init1(num: Int)
   case class Init2(krotka: (Float,Float))
@@ -37,24 +36,24 @@ object Zad1 {
       ???
     }
   }
+@main
+def main1: Unit = {
+  val r = util.Random
+  // r jest „generatorem”, którego należy użyć do generowania wartości
+  // losowych różnych typów (i zakresów) np.
+  // r.nextInt (zwraca pseudolosową liczbę całkowitą z zakresu od 0 do 1),
+  // r.nextInt(100) (zwraca pseudolosową liczbę całkowitą z zakresu od 0 do 99),
+  // r.nextFloat (zwraca pseudolosową liczbę zmiennoprzecinkową z zakresu od 0 do 1).
 
-  def main(args: Array[String]): Unit = {
-    val r = util.Random
-    // r jest „generatorem”, którego należy użyć do generowania wartości
-    // losowych różnych typów (i zakresów) np.
-    // r.nextInt (zwraca pseudolosową liczbę całkowitą z zakresu od 0 do 1),
-    // r.nextInt(100) (zwraca pseudolosową liczbę całkowitą z zakresu od 0 do 99),
-    // r.nextFloat (zwraca pseudolosową liczbę zmiennoprzecinkową z zakresu od 0 do 1).
+  // wyliczenie pierwiastka z liczby 4: math.sqrt(4)
 
-    // wyliczenie pierwiastka z liczby 4: math.sqrt(4)
+  val system = ActorSystem("NienawidzeScali")
+  val menago = system.actorOf(Props[Manager](), "menago1")
 
-    val system = ActorSystem("NienawidzeScali")
-    val menago = system.actorOf(Props[Manager](), "menago1")
-
-    menago ! Init1(5)
+  menago ! Init1(5)
 
 
-
-  }
 
 }
+
+

@@ -28,12 +28,32 @@ def ranking(): List[(Int, Int)] = {
   val res = input
     .map(x=> (x(0), x(1).filter(_ == 1).size))
     .filter(x=> x(1) > polowa)
-    .sortBy(x=> x(1))
-    .map(x=> x(0)) 
+    // .sortBy(x=> x(1))
+    // .map(x=> x(0)) 
     .zipWithIndex
-    .map(x=> (x(1), x(0)))
+    // .map(x=> (x(1), x(0)))
+    .map(x=> (x(0)(0), x(0)(1), x(1)+1))
+    .foldLeft(List(): List[(Int, Int,Int)])((akum, elem) => { // EGZEKWO !!!! 
+      if (akum.size== 0) {
+        val x = akum.appended(elem)
+        x
+        
+      } else {
+        val index = akum.size-1 
+        if (akum(index)(1) == elem(1)) {
+            val newElem = (elem(0), elem(1), akum(index)(2))
+            val x = akum.appended(newElem)
+            x
+        } else {
+          val x = akum.appended(elem)
+          x
+        }
+      }
+    
+    })
   
-  res
+  println(res)
+  return List((1,1))
 
 }
 
