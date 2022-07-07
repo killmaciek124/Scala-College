@@ -1,5 +1,37 @@
-[0m[[0m[33mwarn[0m] [0m[0m[33m-- [E129] Potential Issue Warning: /mnt/c/Users/macie/Desktop/scalarepo/maziuk-maciej/REALKOLOS/kolokwium_1/src/main/scala/Zad01.scala:39:8 [0m[0m
-[0m[[0m[33mwarn[0m] [0m[0m[33m39 |[0m        akum[0m
-[0m[[0m[33mwarn[0m] [0m[0m   |        [33m^^^^[0m[0m
-[0m[[0m[33mwarn[0m] [0m[0m   |A pure expression does nothing in statement position; you may be omitting necessary parentheses[0m
-[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m-- Warning: /home/LABPK/mmaziuk/Pulpit/properscalarepo/maziuk-maciej/REALKOLOS/kolokwium_1/src/main/scala/Zad02.scala:14:2 [0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m14 |[0m  [33mdef[0m [36mpodLista[0m[[35mA[0m]([36mlista[0m: [35mList[A][0m, [36mlen1[0m: [35mInt[0m): [35mList[A][0m = { [34m// DZIALA  // DODAJ FUNKCJONALNOSC NA OSTATNIE ELEMENTY [0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m   |  [33m^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m   |  Line is indented too far to the left, or a `}` is missing[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m-- Warning: /home/LABPK/mmaziuk/Pulpit/properscalarepo/maziuk-maciej/REALKOLOS/kolokwium_1/src/main/scala/Zad02.scala:65:2 [0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m65 |[0m  [33mdef[0m [36mshifting[0m[[35mA[0m]([36mlista[0m: [35mList[A][0m, [36mshift[0m: [35mInt[0m): [35mList[A][0m = { [34m// done // DODAJ FUNKCJONALNOSC NA OSTATNIE ELEMENTY [0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m   |  [33m^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m   |  Line is indented too far to the left, or a `}` is missing[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m-- Warning: /home/LABPK/mmaziuk/Pulpit/properscalarepo/maziuk-maciej/REALKOLOS/kolokwium_1/src/main/scala/Zad02.scala:85:2 [0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m85 |[0m  [33mdef[0m [36mhelper[0m[[35mA[0m]([36mlist[0m: [35mList[A][0m, [36makum[0m: [35mList[List[A]][0m= List())([36mlen[0m: [35mInt[0m, [36mshift[0m: [35mInt[0m): [35mList[List[A]][0m = (list) [33mmatch[0m {[0m
+[0m[[0m[33mwarn[0m] [0m[0m   |  [33m^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m   |  Line is indented too far to the left, or a `}` is missing[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m-- Warning: /home/LABPK/mmaziuk/Pulpit/properscalarepo/maziuk-maciej/REALKOLOS/kolokwium_1/src/main/scala/Zad02.scala:108:2 [0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m108 |[0m  helper(list)(len,shift) [0m
+[0m[[0m[33mwarn[0m] [0m[0m    |  [33m^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m    |  Line is indented too far to the left, or a `}` is missing[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m-- [E030] Match case Unreachable Warning: /home/LABPK/mmaziuk/Pulpit/properscalarepo/maziuk-maciej/REALKOLOS/kolokwium_1/src/main/scala/Zad02.scala:22:11 [0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m22 |[0m      [33mcase[0m ([31m0[0m, head) => [0m
+[0m[[0m[33mwarn[0m] [0m[0m   |           [33m^^^^^^^^^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m   |           Unreachable case[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m-- [E030] Match case Unreachable Warning: /home/LABPK/mmaziuk/Pulpit/properscalarepo/maziuk-maciej/REALKOLOS/kolokwium_1/src/main/scala/Zad02.scala:25:11 [0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m25 |[0m      [33mcase[0m ([31m0[0m, Nil) => [0m
+[0m[[0m[33mwarn[0m] [0m[0m   |           [33m^^^^^^^^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m   |           Unreachable case[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m-- [E030] Match case Unreachable Warning: /home/LABPK/mmaziuk/Pulpit/properscalarepo/maziuk-maciej/REALKOLOS/kolokwium_1/src/main/scala/Zad02.scala:43:11 [0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m43 |[0m      [33mcase[0m (_, head::Nil) => [0m
+[0m[[0m[33mwarn[0m] [0m[0m   |           [33m^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m   |           Unreachable case[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m-- [E030] Match case Unreachable Warning: /home/LABPK/mmaziuk/Pulpit/properscalarepo/maziuk-maciej/REALKOLOS/kolokwium_1/src/main/scala/Zad02.scala:70:10 [0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m70 |[0m      [33mcase[0m(Nil, [31m0[0m) => lista[0m
+[0m[[0m[33mwarn[0m] [0m[0m   |          [33m^^^^^^^^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m   |          Unreachable case[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m-- [E030] Match case Unreachable Warning: /home/LABPK/mmaziuk/Pulpit/properscalarepo/maziuk-maciej/REALKOLOS/kolokwium_1/src/main/scala/Zad02.scala:73:11 [0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m73 |[0m      [33mcase[0m (head::Nil, _) => helper(Nil, shift-[31m1[0m) [0m
+[0m[[0m[33mwarn[0m] [0m[0m   |           [33m^^^^^^^^^^^^^^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m   |           Unreachable case[0m
+[0m[[0m[33mwarn[0m] [0m[0m9 warnings found[0m
